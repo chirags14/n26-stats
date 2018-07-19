@@ -75,15 +75,6 @@ Where:
 * max is a double specifying single highest transaction value in the last 60 seconds
 * min is a double specifying single lowest transaction value in the last 60 seconds
 * count is a long specifying the total number of transactions happened in the last 60 seconds
-
-### Configuration
-
-	In the application.properties you can change time interval for Transaction statistics API , which will change behaviour how it shows statistics.
-	#Time interval for Transaction statistics service (in milliseconds)
-	config.n26.transaction.statistic.time.interval=60000
-	
-	To read more output of the service or in general increase the log level of the system
-	logging.level.com.n26.group.transaction.statistic=DEBUG
 	    
 ### Build
 You can build using:

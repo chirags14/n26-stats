@@ -2,9 +2,14 @@
 
 ### Introduction
 
-This is an API using https://projects.spring.io/spring-boot/[Spring Boot], using Maven for compiling and building the application. It provides a restful service and documented with http://swagger.io[Swagger].
+This is an API using https://projects.spring.io/spring-boot/[Spring Boot], using Maven for compiling and building the application.
 
 The main use case for this API is to calculate real time statistic from the last 60 seconds. There will be two APIs, one of them is called every time a transaction is made. It is also the sole input of this rest API. The other one returns the statistic based of the transactions of the last 60.
+
+### List of API's
+
+1. ``POST /transactions`` - saves the given transaction if valid for stats summary
+2. ``GET /statistics`` - gets the aggregated summary statistics
 
 ## Specs
 
@@ -55,10 +60,10 @@ Content-Type: application/json
 ----
 ----
 {
-    "sum": 300.6,
-    "avg": 300.6,
-    "max": 300.6,
-    "min": 300.6,
+    "sum": 500.8,
+    "avg": 500.8,
+    "max": 500.8,
+    "min": 500.8,
     "count": 1
 }
 ----
@@ -90,7 +95,7 @@ You can run using:
 
   $ mvn spring-boot:run
 
-The REST endpoint from the command line:
+The REST endpoints from the command line:
 
     $ curl http://localhost:8080/statistics
 

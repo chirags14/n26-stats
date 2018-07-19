@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This is an API using https://projects.spring.io/spring-boot/[Spring Boot], using Maven for compiling and building the application.
+This is an API using https://projects.spring.io/spring-boot, using Maven for compiling and building the application.
 
 The main use case for this API is to calculate real time statistic from the last 60 seconds. There will be two APIs, one of them is called every time a transaction is made. It is also the sole input of this rest API. The other one returns the statistic based of the transactions of the last 60.
 

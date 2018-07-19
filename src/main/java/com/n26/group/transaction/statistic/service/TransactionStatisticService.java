@@ -18,7 +18,7 @@ import javaslang.control.Option;
  * @author chirag suthar
  * 
  *         TransactionStatisticService : this class will be responsible to add
- *         ,get and delete transaction statics for Statics servcie.
+ *         ,get and delete transaction statics for Statics service.
  *
  */
 @Service
@@ -73,7 +73,7 @@ public class TransactionStatisticService {
 	 */
 	public Statistic getLast60SecondsStats() {
 		// Check if transactionStaticsHolder empty or not , if its empty there are no
-		// recent tranction in given timeinterval i.e 60 seconds
+		// recent transaction in given time interval i.e 60 seconds
 		if (transactionStaticsHolder.isEmpty()) {
 			return new Statistic(0.0, 0.0, 0.0, 0.0, 0L);
 		} else {
